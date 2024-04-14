@@ -116,13 +116,17 @@ img {
   padding: 6rem calc(3 * 6rem);
 }
 
-.snippets__heading {
+.snippets__heading,
+.devices__heading,
+.workflow__heading {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--dark-grayish-blue);
 }
 
-.snippets__paragraph {
+.snippets__paragraph,
+.devices__paragraph,
+.workflow__paragraph {
   color: var(--grayish-blue);
   font-size: 1.125rem;
   /* max-width: 85%; */
@@ -157,4 +161,84 @@ img {
 
 .snippets__computer {
   max-width: 40rem;
+}
+
+/* devices section */
+.devices__text-content {
+  text-align: center;
+  padding: 6rem calc(3 * 6rem);
+}
+
+.devices__image-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.devices__workflow {
+  padding: 3rem 18rem;
+}
+
+.workflow__text-content {
+  text-align: center;
+}
+
+.workflow__features {
+  padding: 3rem 9rem;
+  /* border: 2px solid green; for preview */
+}
+
+/* workflow grid */
+.workflow__cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.workflow__item {
+  text-align: center;
+}
+
+.workflow__item-image-wrapper {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workflow__item-image-wrapper img {
+  display: block;
+}
+
+.workflow__item-heading {
+  margin-bottom: 1rem;
+  display: block;
+  color: var(--dark-grayish-blue);
+}
+
+.workflow__item-para {
+  color: var(--grayish-blue);
+}
+
+.companies-section {
+  padding: 4rem;
+}
+
+.companies__cols {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.companies__company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companies__company img {
+  max-width: 125px;
 }
