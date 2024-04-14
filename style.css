@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  /* for shadow */
+  --stronger-cyan: hsl(171, 60%, 35%);
+  --light-blue: hsl(233, 100%, 69%);
+  /* for shadow */
+  --dark-blue: hsl(233, 91%, 63%);
+
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+
+  --font-main: "Bai Jamjuree", sans-serif;
+
+  --weight-regular: 400;
+  --weight-bold: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero {
+  max-height: 75rem;
+  /* overflow: hidden; */
+  position: relative;
+  z-index: 1;
+}
+
+.hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.hero__content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.hero__text-content {
+  text-align: center;
+  /* border: 1px solid red; for preview only */
+  padding: 0 7.5rem;
+}
+
+.hero__heading-lg {
+  margin-top: 2rem;
+  color: var(--dark-grayish-blue);
+  /* margin-bottom: 1rem; */
+  font-size: 2.75rem;
+}
+
+.hero__paragraph {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  color: var(--grayish-blue);
+}
+
+/* buttons */
+.hero__btn-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  font-weight: var(--weight-bold);
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+.btn__cyan {
+  color: white;
+  background-color: var(--strong-cyan);
+  box-shadow: 0px 5px 0px 0px var(--stronger-cyan);
+  transition: 100ms ease-in-out;
+}
+
+.btn__cyan:hover {
+  box-shadow: 0px 5px 10px var(--stronger-cyan);
+}
+
+.btn__blue {
+  color: white;
+  background-color: var(--light-blue);
+  box-shadow: 0px 5px 0px 0px var(--dark-blue);
+}
+
+.btn__blue:hover {
+  box-shadow: 0px 5px 10px var(--light-blue);
+}
