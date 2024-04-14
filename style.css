@@ -242,3 +242,28 @@ img {
 .companies__company img {
   max-width: 125px;
 }
+
+/* downloads section */
+.downloads__text-content {
+  text-align: center;
+  padding: 6rem 18rem;
+}
+
+.downloads__heading {
+  font-size: 2rem;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.downloads__paragraph {
+  font-size: 1.125rem;
+  color: var(--grayish-blue);
+}
+
+.downloads__btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
