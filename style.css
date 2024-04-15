@@ -101,6 +101,11 @@ img {
   box-shadow: 0px 5px 10px var(--stronger-cyan);
 }
 
+.btn__cyan:focus {
+  outline-offset: 2px;
+  outline: 3px dotted var(--stronger-cyan);
+}
+
 .btn__blue {
   color: white;
   background-color: var(--light-blue);
@@ -109,6 +114,11 @@ img {
 
 .btn__blue:hover {
   box-shadow: 0px 5px 10px var(--light-blue);
+}
+
+.btn__blue:focus {
+  outline-offset: 2px;
+  outline: 3px dotted var(--dark-blue);
 }
 
 /* snippets */
@@ -242,6 +252,13 @@ img {
 
 .companies__company img {
   max-width: 125px;
+  display: block;
+  cursor: pointer;
+}
+
+.companies__company:active {
+  outline-offset: 3px;
+  outline: 3px dotted var(--strong-cyan);
 }
 
 /* downloads section */
@@ -315,6 +332,11 @@ img {
   color: var(--strong-cyan);
 }
 
+.footer__link:focus {
+  outline: 3px dotted var(--strong-cyan);
+  outline-offset: 3px;
+}
+
 .social__icons-cols {
   display: flex;
   justify-content: center;
@@ -327,12 +349,14 @@ img {
   color: var(--dark-grayish-blue);
   transition: 100ms ease;
   font-size: 1.125rem;
+  display: block;
   cursor: pointer;
 }
 
 .social__icon:hover {
   color: var(--strong-cyan);
 }
+
 /* responsive for mobile */
 @media screen and (max-width: 700px) {
   .hero__content-center {
