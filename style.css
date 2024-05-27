@@ -94,31 +94,36 @@ img {
   color: white;
   background-color: var(--strong-cyan);
   box-shadow: 0px 5px 0px 0px var(--stronger-cyan);
+  outline-offset: 0.75rem;
   transition: 100ms ease-in-out;
 }
 
 .btn__cyan:hover {
-  box-shadow: 0px 5px 10px var(--stronger-cyan);
+  box-shadow: 0px 10px 0px 0px var(--stronger-cyan);
 }
 
 .btn__cyan:focus {
   outline-offset: 2px;
-  outline: 3px dotted var(--stronger-cyan);
+  outline: 3px dotted;
+  outline-color: black;
 }
 
 .btn__blue {
   color: white;
   background-color: var(--light-blue);
+  outline-offset: 0.75rem;
   box-shadow: 0px 5px 0px 0px var(--dark-blue);
+  transition: 100ms ease-in-out;
 }
 
 .btn__blue:hover {
-  box-shadow: 0px 5px 10px var(--light-blue);
+  box-shadow: 0px 10px 0px 0px var(--light-blue);
 }
 
 .btn__blue:focus {
   outline-offset: 2px;
-  outline: 3px dotted var(--dark-blue);
+  outline: 3px dotted;
+  outline-color: black;
 }
 
 /* snippets */
